@@ -1,0 +1,8 @@
+[submodule "genov"]
+	path = genov
+	url = git@github.com:gbellocchi/genov.git
+	branch = cps-summer-school-22
+[submodule "hero"]
+	path = hero
+	url = https://github.com/pulp-platform/hero.git
+	branch = cps-summer-school-22
