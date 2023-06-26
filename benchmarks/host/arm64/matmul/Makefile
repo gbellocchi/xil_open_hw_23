@@ -1,14 +1,11 @@
-ROOT 			:= $(patsubst %/,%, $(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
-DIRECTORIES 	:= 01_uncached 02_cached
+ROOT := $(patsubst %/,%, $(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
 
-.PHONY: clean all
-all: build_env build_app
-clean: clean_env
+############################ Sources ############################
 
-# Build benchmark applications.
-build_app:
-	@$(foreach dir,$(DIRECTORIES), cd $(ROOT)/$(dir) && make -s build_app;)
-build_env:
-	@$(foreach dir,$(DIRECTORIES), cd $(ROOT)/$(dir) && make -s build_env;)
-clean_env:
-	@$(foreach dir,$(DIRECTORIES), cd $(ROOT)/$(dir) && make -s clean_local;)
+APP_NAME := mmult_sw
+
+-include ${APP_UTILS_DIR}/app.mk
+-include ${BOARD_UTILS_DIR}/board.mk
+
+all: build_env build_app clean_board deploy_app
+clean: clean_local
