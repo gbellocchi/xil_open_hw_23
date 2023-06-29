@@ -1,8 +1,11 @@
 
 # GenOv
 Project name: **_GenOv: Streamlining the Design and Optimization of Heterogeneous RISC-V-based FPGA Overlays_**
+
 Team Number: *xohw23-150*
+
 Team: *Gianluca Bellocchi*
+
 Supervisor: *Andrea Marongiu*
 
 ## Description
