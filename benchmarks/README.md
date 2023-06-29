@@ -1,7 +1,7 @@
 Benchmarks
 ==================================
-We contribute a set of benchmarking suite where our **FPGA overlay** solution is compared with  a  reference  Xilinx-based methodology that leverages  the standard Vitis/Vivado HLS design flow. 
-We also include a host processor  implementation, as a baseline.
+We contribute a variety of implementations of a Matrix Multiplication (AB) benchmark to show off the advantages of our **FPGA overlay** solution.
+For instance, we compare with a baseline host processor  implementation, as well as a *reference* Xilinx-based approach based on the *Vitis/Vivado HLS design flow*. 
 
 **More information is to be found in our publication [1].**
 
@@ -19,6 +19,6 @@ Design | Description |
 * E-mail: <name.surname@unimore.it>
 
 [.]:.
-[host/]:host/
-[pulp/]:pulp/
-[xilinx/]:xilinx/
+[host/]:/host/arm64/matmul/
+[pulp/]:pulp/matmul/
+[xilinx/]:xilinx/matmul/
