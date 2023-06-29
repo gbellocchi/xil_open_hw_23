@@ -19,6 +19,6 @@ Design | Description |
 * E-mail: <name.surname@unimore.it>
 
 [.]:.
-[host/]:/host/arm64/matmul/
+[host/]:host/arm64/matmul/
 [pulp/]:pulp/matmul/
 [xilinx/]:xilinx/matmul/
