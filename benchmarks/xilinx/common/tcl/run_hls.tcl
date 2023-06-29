@@ -32,10 +32,10 @@ open_project -reset $project_name\_proj
 set src_loc $hls_root\/src
 
 # Add design files
-add_files $src_loc/$project_name\.cpp
+add_files $src_loc/mmult.cpp
 
 # Add test bench 
-add_files -tb $src_loc/$project_name\_tb.cpp
+add_files -tb $src_loc/mmult_tb.cpp
 
 # Set the top-level function
 set_top $accel_name

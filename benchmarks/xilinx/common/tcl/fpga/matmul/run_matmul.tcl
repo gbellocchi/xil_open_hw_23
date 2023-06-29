@@ -88,10 +88,11 @@ set_property name synth_150MHz [get_runs synth_1]
 set_property name impl_150MHz [get_runs impl_1]
 
 # Synthesize
-launch_runs synth_150MHz -host {larain8 32} -remote_cmd {ssh -q -o BatchMode=yes}
+launch_runs synth_150MHz -jobs 12
 wait_on_run synth_150MHz
 
 # Implement
+set_property strategy Congestion_SpreadLogic_low [get_runs impl_150MHz]
 launch_runs impl_150MHz -jobs 12
 wait_on_run impl_150MHz
 
