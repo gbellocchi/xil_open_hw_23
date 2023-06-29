@@ -1,8 +1,8 @@
 # Author: Gianluca Bellocchi <gianluca.bellocchi@unimore.it>
 
-ROOT 			:= $(patsubst %/,%, $(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
+ROOT := $(patsubst %/,%, $(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
 
-PROJ_NAME 		:= xil_06
+PROJ_NAME 		:= xil_05
 DESIGN_NAME 	:= matmul
 
 COMMON			:= $(ROOT)/../../../common
@@ -11,10 +11,7 @@ VIVADO_DIR		:= $(ROOT)/vivado
 HLS_IP_DIR		:= $(ROOT)/../hls/$(PROJ_NAME)_proj
 HW_DESIGN_DIR	:= $(ROOT)/hw_design
 
-ifeq ($(VIVADO),)
-VIVADO := vitis-2019.2 vivado
-endif
-
+VIVADO := vivado
 VIVADO_OPT :=-mode batch
 
 .PHONY: all run_fpga clean
@@ -22,7 +19,7 @@ all: $(PROJ_NAME)
 run_fpga:
 	@mkdir -p $(VIVADO_DIR) $(HW_DESIGN_DIR)
 	@${VIVADO} ${VIVADO_OPT} \
-		-source $(TCL_DIR)/$(DESIGN_NAME)/run_$(PROJ_NAME).tcl \
+		-source $(TCL_DIR)/$(DESIGN_NAME)/run_$(DESIGN_NAME).tcl \
 		-tclargs $(PROJ_NAME) $(VIVADO_DIR) $(HLS_IP_DIR) $(HW_DESIGN_DIR)
 clean:
 	@rm -rf $(VIVADO_DIR)/*

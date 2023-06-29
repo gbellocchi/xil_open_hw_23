@@ -1,6 +1,7 @@
 ROOT 			:= $(patsubst %/,%, $(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
 
-PROJ_NAME 		:= xil_06
+PROJ_NAME 		:= xil_05
+ACCEL_NAME 		:= mmult_hw
 
 SRC_DIR			:= $(ROOT)/src
 COMMON			:= $(ROOT)/../../../common
@@ -28,7 +29,7 @@ get_rtl:
 	@cp -rf $(SYN_DIR)/verilog/* $(RTL_DIR)
 run_hls:
 	@rm -rf $(PROJ_NAME)_proj
-	@vivado_hls -f $(TCL_DIR)/run_hls.tcl $(ROOT) $(PROJ_NAME) $(RUN_MODE)
+	@vivado_hls -f $(TCL_DIR)/run_hls.tcl $(ROOT) $(PROJ_NAME) $(ACCEL_NAME) $(RUN_MODE)
 clean:
 	@rm -rf $(PROJ_NAME)_proj
 	@rm -f 	*.log *.jou
