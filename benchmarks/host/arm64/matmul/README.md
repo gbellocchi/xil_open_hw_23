@@ -1,7 +1,8 @@
 HOST benchmarks
 ==================================
 A HOST implementation is included as a baseline for the PULP and reference implementation.
-More information is to be found in our publication [1].
+
+**More information is to be found in our publication [1].**
 
 ## Proposed designs
 Design | Description |
