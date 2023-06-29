@@ -6,3 +6,6 @@
 	path = hero
 	url = https://github.com/pulp-platform/hero.git
 	branch = cps-summer-school-22
+[submodule "arov"]
+	path = arov
+	url = https://github.com/gbellocchi/arov
