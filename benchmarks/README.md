@@ -6,14 +6,14 @@ For instance, we compare with a baseline host processor  implementation, as well
 **More information is to be found in our publication [1].**
 
 ## Proposed designs
-Design | Description |
+Platform | Description |
 ---------------|-----------------------|
 [host/][]|Host processor baseline implementation running at 1.2GHz.|
 [pulp/][]|**FPGA overlay** implementations running at 100MHz. |
 [xilinx/][]|Reference implementations running at 150MHz.|
 
 ## References
-1) "A RISC-V-based FPGA Overlay to Simplify Embedded Accelerator Deployment" - G. Bellocchi et al. (2021)
+1) **"A RISC-V-based FPGA Overlay to Simplify Embedded Accelerator Deployment" - G. Bellocchi et al. (2021)**
 
 ## Contacts
 * E-mail: <name.surname@unimore.it>

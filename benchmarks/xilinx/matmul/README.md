@@ -14,7 +14,7 @@ Design | Description |
 [05_x_pm/][]|Standalone pure-hardware implementation. Datapath is optimized employing total array partitioning and loop unrolling to further increase parallelism (PM).|
 
 ## References
-1) "A RISC-V-based FPGA Overlay to Simplify Embedded Accelerator Deployment" - G. Bellocchi et al. (2021)
+1) **"A RISC-V-based FPGA Overlay to Simplify Embedded Accelerator Deployment" - G. Bellocchi et al. (2021)**
 
 ## Contacts
 * E-mail: <name.surname@unimore.it>

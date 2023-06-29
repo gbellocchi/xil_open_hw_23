@@ -14,7 +14,7 @@ Design | Description |
 [05_o_hw_pm/][]|Hybrid hardware/software implementation. The interface of the accelerator is parallelized to better accomodate the optimized datapath with the required bandwidth. Soft-core implements a double-buffered control routine.|
 
 ## References
-1) "A RISC-V-based FPGA Overlay to Simplify Embedded Accelerator Deployment" - G. Bellocchi et al. (2021)
+1) **"A RISC-V-based FPGA Overlay to Simplify Embedded Accelerator Deployment" - G. Bellocchi et al. (2021)**
 
 ## Contacts
 * E-mail: <name.surname@unimore.it>
