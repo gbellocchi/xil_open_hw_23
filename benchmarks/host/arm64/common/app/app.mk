@@ -1,6 +1,3 @@
-SRC_DIR			:= $(ROOT)/src
-BUILD_DIR		:= $(ROOT)/build
-
 build_app: 
 	@cd $(BUILD_DIR) && make -s clean all
 
