@@ -21,6 +21,9 @@ Though, more recent versions will work anyway.
 ### HERO
 [HERO](third-party/hero) is included as a submodule. The installation process is described in a step-by-step guide provided at its repository source: https://github.com/pulp-platform/hero.
 
+## Run pre-build ZCU102 project
+Follow the instruction in this [user guide](ex-prj-zcu102/README.md) 
+
 ## Build an heterogeneous RISC-V-based FPGA overlay
 Below are described the steps required to build an FPGA overlay emplying our proposed solution.
 

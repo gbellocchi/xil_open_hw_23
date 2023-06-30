@@ -27,11 +27,12 @@ Platform | Description |
 [third-party/][]|Third-party repositories. |
 
 ## Tutorial
-We include a [TUTORIAL](tutorial.md) to:
-+ Guide the user in its first steps using **GenOv**;
-+ Build and run the repository benchmarks;
-+ Run the provided ZCU102 image;
-+ Offer tips about how to *reuse* the proposed methodology for other projects.
+We include a [TUTORIAL](tutorial.md) to guide the user in its first steps using **GenOv**.
+
+This will provide a baseline understanding of how to:
++ Build and run the provided MatMul benchmarks;
++ Deploy the pre-built ZCU102 image under [ex-prj-zcu102/][];
++ Reuse the proposed approach for other projects.
 
 ## References
 1) **"A RISC-V-based FPGA Overlay to Simplify Embedded Accelerator Deployment" - G. Bellocchi et al. (2021)**
