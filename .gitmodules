@@ -1,11 +1,12 @@
 [submodule "genov"]
 	path = genov
 	url = git@github.com:gbellocchi/genov.git
-	branch = cps-summer-school-22
+	branch = xil_open_hw_23
 [submodule "hero"]
-	path = hero
-	url = https://github.com/pulp-platform/hero.git
-	branch = cps-summer-school-22
+	path = third-party/hero
+	url = git@github.com:alessandrocapotondi/hero.git
+	branch = master
 [submodule "arov"]
-	path = arov
+	path = third-party/arov
 	url = https://github.com/gbellocchi/arov
+	branch = xil_open_hw_23
