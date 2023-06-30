@@ -16,9 +16,6 @@ Design | Description |
 ## References
 1) **"A RISC-V-based FPGA Overlay to Simplify Embedded Accelerator Deployment" - G. Bellocchi et al. (2021)**
 
-## Contacts
-* E-mail: <name.surname@unimore.it>
-
 [.]:.
 [01_x_hw/]:01_x_hw/
 [02_x_bl/]:02_x_bl/

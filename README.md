@@ -4,9 +4,11 @@ Project name: **_GenOv: Streamlining the Design and Optimization of Heterogeneou
 
 Team Number: *xohw23-150*
 
-Team: *Gianluca Bellocchi*
+Team: *Gianluca Bellocchi*, *Alessandro Capotondi*
 
 Supervisor: *Andrea Marongiu*
+
+***If you want to use _GenOv_ and the other released items, you can cite our paper [1].***
 
 ## Description
 **GenOv** is an open-source design automation tool targeting accelerator-rich FPGA overlays [1].
@@ -18,10 +20,11 @@ Our FPGA overlays are built around the RISC-V instruction set architecture (ISA)
 The repository is organized in the following way. 
 Platform | Description |
 ---------------|-----------------------|
+[genov/][]|Repository of **GenOv**, a design automation tool to generate and specialize accelerator-rich FPGA overlays [1].|
 [benchmarks/][]|Set of Matrix Multiplication (MatMul) implementations to show off the advantages of our **FPGA overlay** solution. |
 [ex-prj-zcu102/][]|An exemplary implementation of our **FPGA overlay** integrating a HLS-based MatMul accelerator. The folder comprises HW/SW project files, as well as a ready-to-use SD card image for [Zynq UltraScale+ MPSoC ZCU102](https://www.mouser.it/new/xilinx/xilinx-zynq-ultrascale-zcu102-eval-kit/) boards.|
-[genov/][]|Repository of **GenOv** [1].|
-[hero/][]|Repository of **HERO** [2,3].|
+[hw/][]|Hardware subsystem. |
+[third-party/][]|Third-party repositories. |
 
 ## Tutorial
 We include a [TUTORIAL](tutorial.md) to:
@@ -39,7 +42,8 @@ We include a [TUTORIAL](tutorial.md) to:
 * E-mail: <name.surname@unimore.it>
 
 [.]:.
+[genov/]:https://github.com/gbellocchi/genov
 [benchmarks/]:benchmarks/
 [ex-prj-zcu102/]:ex-prj-zcu102/
-[genov/]:https://github.com/gbellocchi/genov
-[hero/]:https://github.com/pulp-platform/hero
+[hw/]:hw/
+[third-party/]:third-party/

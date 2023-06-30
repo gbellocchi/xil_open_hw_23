@@ -11,6 +11,8 @@ RTL_DIR			:= $(ROOT)/rtl
 SYN_DIR			:= $(ROOT)/$(PROJ_NAME)_proj/solution1/syn
 IMPL_DIR		:= $(ROOT)/$(PROJ_NAME)_proj/solution1/impl
 
+TOOL_HLS		?= vivado_hls
+
 # -------- #
 # RUN_MODE #
 # -------- #
@@ -29,7 +31,7 @@ get_rtl:
 	@cp -rf $(SYN_DIR)/verilog/* $(RTL_DIR)
 run_hls:
 	@rm -rf $(PROJ_NAME)_proj
-	@vivado_hls -f $(TCL_DIR)/run_hls.tcl $(ROOT) $(PROJ_NAME) $(ACCEL_NAME) $(RUN_MODE)
+	@$(TOOL_HLS) -f $(TCL_DIR)/run_hls.tcl $(ROOT) $(PROJ_NAME) $(ACCEL_NAME) $(RUN_MODE)
 clean:
 	@rm -rf $(PROJ_NAME)_proj
 	@rm -f 	*.log *.jou

@@ -5,8 +5,8 @@ echo "Xilinx Open Hardware Design Competition 2023"
 XIL_OPENHW_PATH=$(dirname "$(readlink -e "${BASH_SOURCE[0]}")")
 
 # HERO
-export HERO_OV_HOME_DIR=$XIL_OPENHW_PATH/hero
-export HERO_OV_HW_EXPORT=$XIL_OPENHW_PATH/arov/ov_cfg
+export HERO_OV_HOME_DIR=$XIL_OPENHW_PATH/third-party/hero
+export HERO_OV_HW_EXPORT=$XIL_OPENHW_PATH/hw/arov
 export HERO_INSTALL=$HERO_OV_HOME_DIR/install
 export PULP_RISCV_GCC_TOOLCHAIN=$HERO_INSTALL
 
@@ -16,7 +16,7 @@ export VIVADO="vivado"
 export PETALINUX_VER=""
 
 export VSIM=vsim
-export VSIM_PATH=$XIL_OPENHW_PATH/arov/vsim
+export VSIM_PATH=$XIL_OPENHW_PATH/hw/arov/vsim
 
 # Deployment setup
 export HERO_BOARD_IP= # FILL your board IP

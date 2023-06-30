@@ -7,6 +7,6 @@
 	url = git@github.com:alessandrocapotondi/hero.git
 	branch = master
 [submodule "arov"]
-	path = third-party/arov
+	path = hw/arov
 	url = https://github.com/gbellocchi/arov
 	branch = xil_open_hw_23
